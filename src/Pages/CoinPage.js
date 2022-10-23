@@ -76,7 +76,7 @@ const CoinPage = () => {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
    fetchdata();
-  }, [])
+  }, [currency])
   
   const classes = useStyles();
   //take time to show linerProgress
