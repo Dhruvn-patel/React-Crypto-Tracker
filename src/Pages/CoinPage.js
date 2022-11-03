@@ -68,14 +68,14 @@ const CoinPage = () => {
 
 
 
-  const fetchdata=async()=>{
+  const fetchCoin =async()=>{
     const {data}=await axios.get(SingleCoin(id));
     setcoin(data);
   }
 
   useEffect(() => {
+    fetchCoin ();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-   fetchdata();
   }, [currency])
   
   const classes = useStyles();

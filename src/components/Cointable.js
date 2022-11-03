@@ -52,6 +52,7 @@ const Cointable = () => {
 
   useEffect(() => {
     fetchCoins();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency])
 
   //filter search option 
